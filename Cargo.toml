@@ -1,11 +1,11 @@
 [package]
 name = "tor_client"
-version = "0.0.3"
+version = "0.0.4"
 authors = ["Brian Taylor <brian@resolvingarchitecture.io>"]
 license-file = "LICENSE"
 edition = "2018"
 description = "A client for the local TOR router instance"
-homepage = "http://resolvingarchitecture.io"
+homepage = "https://resolvingarchitecture.io"
 documentation = "https://github.com/resolvingarchitecture/tor-client"
 repository = "https://github.com/resolvingarchitecture/tor-client"
 publish = true
