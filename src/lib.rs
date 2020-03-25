@@ -16,10 +16,7 @@ impl TORClient {
         info!("{}","Initializing TOR Client...");
 
     }
-}
-
-impl Network for TORClient {
-    fn handle(&mut self, packet: &mut Packet) {
+    pub fn handle(&mut self, packet: &mut Packet) {
         info!("Handling incoming packet id={}",packet.id);
 
     }
