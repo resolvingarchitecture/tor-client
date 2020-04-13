@@ -7,7 +7,7 @@ use std::io::{Error, ErrorKind};
 
 fn main() {
     simple_logger::init().unwrap();
-    let m = App::new("tor")
+    let m = App::new("tor_client")
         .about("A TOR client for the local TOR router instance. Not compliant with any version yet.")
         .version(crate_version!())
         .author("Brian Taylor <brian@resolvingarchitecture.io>")

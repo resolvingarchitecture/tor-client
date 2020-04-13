@@ -84,3 +84,7 @@ Request BTC/XMR/ZEC address for a donation at brian@resolvingarchitecture.io.
     ```shell script
     ss -nlt
     ```
+6. Install libssl-dev if necessary
+    ```shell script
+    sudo apt-get install libssl-dev
+    ```
