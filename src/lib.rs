@@ -1,24 +1,19 @@
-use ra_common::models::{Packet};
-
 use log::{info};
+use std::io::Error;
 
 pub struct TORClient {
-
+    pub local_addr: String
 }
 
 impl TORClient {
-    pub fn new() -> TORClient {
-        TORClient {
-
-        }
+    pub fn new() -> Result<TORClient, Error> {
+        Ok(TORClient {
+            local_addr: String::new()
+        })
     }
-    pub fn init(&mut self) {
-        info!("{}","Initializing TOR Client...");
-
-    }
-    pub fn handle(&mut self, packet: &mut Packet) {
-        info!("Handling incoming packet id={}",packet.id);
-
+    pub fn get(&mut self, url: &String) -> Result<Vec<u8>, Error> {
+        info!("Get resource {}...", &url);
+        unimplemented!()
     }
 }
 
