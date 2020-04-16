@@ -15,7 +15,7 @@ fn main() {
         .setting(AppSettings::ColoredHelp)
         .setting(AppSettings::ColorAlways)
         .subcommand(
-            App::new("site")
+            App::new("get")
                 .about("a request for a web resource")
                 .args(&[
                     Arg::with_name("url")
@@ -31,7 +31,7 @@ fn main() {
         Some("get") => {
             let am = m.subcommand().1.unwrap();
             let url = am.value_of("url").unwrap();
-            get(String::from(url));
+            get(url);
         },
         None => {
             println!("No subcommand was used")
@@ -41,8 +41,14 @@ fn main() {
 
 }
 
-fn get(url: String) -> Result<Vec<u8>, Error> {
-    println!("get...");
-    let mut client = TORClient::new()?;
-    client.get(&url)
+fn get(url: &str) {
+    match TORClient::new() {
+        Ok(mut client) => {
+            match client.get(url) {
+                Ok(res) => println!("{}", String::from_utf8(res).unwrap()),
+                Err(e) => println!("{}", e)
+            }
+        },
+        Err(e) => println!("{}",e)
+    }
 }
