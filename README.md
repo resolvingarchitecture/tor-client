@@ -49,22 +49,22 @@ Request BTC/XMR/ZEC address for a donation at brian@resolvingarchitecture.io.
 
 ## Goals
 
-*[ ] 1.0.0 - Minimal Useful Functionality
-    *[ ] 0.1.0 - Minimal CLI: Handshake and Session creation
-    *[ ] 0.2.0 - Basic I/O: Retrieve web page as a file over TOR using CLI
-    *[ ] 0.3.0 - Service Bus Support: [service_bus](https://crates.io/crates/service-bus) crate implementing Service trait
-    *[ ] 0.4.0 - TOR hidden services: setup hidden service automatically
-    *[ ] 0.5.0 - Send/Receive messages using TOR hidden services
-    *[ ] 0.6.0 - Router control
-    *[ ] 0.7.0 - Test Suite
-    *[ ] 0.8.0 - Example CLI use cases
-    *[ ] 0.9.0 - Example Service use cases
-    *[ ] 0.10.0 - Determine if local I2P router installed
-    *[ ] 0.11.0 - Determine local I2P router status
-    *[ ] 0.12.0 - Auto-install I2P router
-    *[ ] 0.13.0 - README.md completed
-    *[ ] 0.14.0 - All code documented
-    *[ ] 0.15.0 - All examples documented
+- [ ] 1.0.0 - Minimal Useful Functionality<br>
+    - [ ] 0.1.0 - Minimal CLI: Handshake and Session creation<br>
+    - [ ] 0.2.0 - Basic I/O: Retrieve web page as a file over TOR using CLI<br>
+    - [ ] 0.3.0 - Service Bus Support: [service_bus](https://crates.io/crates/service-bus) crate implementing Service trait<br>
+    - [ ] 0.4.0 - TOR hidden services: setup hidden service automatically<br>
+    - [ ] 0.5.0 - Send/Receive messages using TOR hidden services<br>
+    - [ ] 0.6.0 - Router control<br>
+    - [ ] 0.7.0 - Test Suite<br>
+    - [ ] 0.8.0 - Example CLI use cases<br>
+    - [ ] 0.9.0 - Example Service use cases<br>
+    - [ ] 0.10.0 - Determine if local I2P router installed<br>
+    - [ ] 0.11.0 - Determine local I2P router status<br>
+    - [ ] 0.12.0 - Auto-install I2P router<br>
+    - [ ] 0.13.0 - README.md completed<br>
+    - [ ] 0.14.0 - All code documented<br>
+    - [ ] 0.15.0 - All examples documented<br>
 
 ## Setup - Ubuntu 18.04
 1. Download & Install TOR Router
